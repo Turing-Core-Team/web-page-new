@@ -50,7 +50,7 @@ header img{
 
 .header-scroll{
     background-color: var(--header-color-scroll);
-    border-bottom: var(--primary-color) solid .3rem;
+    border-bottom: var(--tb-purple) solid .3rem;
 }
 
 .header-images-scroll{
@@ -76,7 +76,7 @@ header img{
 }
 
 .main-content h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: var(--secondary-color);
     text-align: center;
     display: var(--scrollbar-display);
@@ -84,17 +84,18 @@ header img{
 }
 
 .main-content h2{
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: var(--secondary-color);
     text-align: center;
     font-weight: 400;
     margin: 3rem 0;
     z-index: 53;
+    width: 80vw;
 }
 
 .mouse-scroll{
-    width: 3rem;
-    height: 5rem;
+    width: 2.75rem;
+    height: 4rem;
     border-radius: 5rem;
     background-color: var(--secondary-color);
     display: flex;
@@ -103,8 +104,8 @@ header img{
 }
 
 .mouse-wheel{
-    width: .4rem;
-    height: 1.25rem;
+    width: .3rem;
+    height: 1rem;
     background: var(--main-gradient);
     margin-top: 1rem;
     border-radius: 1rem;
@@ -142,12 +143,13 @@ header img{
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding-top: 5rem;
 }
 
 .section-title{
     color: var(--primary-color);
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.75rem;
     padding: 2rem 0;
     width: 80vw;
 }
