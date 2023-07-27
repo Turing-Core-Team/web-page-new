@@ -135,6 +135,67 @@ header img{
     transition: .3s;
 }
 
+/*What we are*/
+
+#what-we-are, #purpose{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-title{
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 2rem 0;
+    width: 80vw;
+}
+
+.section-content{
+    font-size: 1.3rem;
+    width: 80vw;
+    text-align: center;
+    font-weight: 200;
+}
+
+.separate{
+    padding: 4rem 0;
+}
+
+b{
+    font-weight: 600;
+}
+
+.purple{
+    color: var(--tb-purple);
+}
+.blue{
+    color: var(--tb-blue);
+}
+
+/*Separator*/
+
+.first-separator{
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.separator-line{
+    width: 40vw;
+    height: 0;
+    border-top: var(--tb-blue) dotted .3rem;
+}
+
+.first-hexagon{
+    width: 10vw;
+    height: 12vw;
+}
+
 /*---------- Responsive ----------*/
 
 @media (min-width: 1000px){
