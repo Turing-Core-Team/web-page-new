@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --primary-color: black;
+    --secondary-color: white;
+    --tb-purple: #AA33AA;
+    --tb-pink: #F76382;
+    --tb-blue: #018BA9;
+    --tb-light-pink: #FFBDF9;
+    --header-color: rgba(0, 0, 0, 0.3);
+    --header-color-scroll: rgba(255, 255, 255, 0.3);
+    --main-gradient: linear-gradient(135deg, rgba(1,139,169,1) 0%, rgba(170,51,170,1) 100%);
+    --scrollbar-display: block;
+}
+
+body{
+    height: 250vh;
+    overflow-x: hidden;
+}
+
+.hidden{
+    opacity: 0;
+}
+
+/*---------- Landing Page ----------*/
+
+/*Header*/
+
+header{
+    height: 12.5vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background-color: var(--header-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    transition: .3s;
+}
+
+header img{
+    height: 60%;
+    margin: 0 3rem;
+}
+
+.header-scroll{
+    background-color: var(--header-color-scroll);
+    border-bottom: var(--primary-color) solid .3rem;
+}
+
+.header-images-scroll{
+    filter: invert(1);
+}
+
+/*Hero Section*/
+
+#hero-section{
+    height: 120vh;
+    width: 100vw;
+    background: var(--main-gradient);
+}
+
+.main-content{
+    width: 100vw;
+    height: 85vh;
+    padding-top: 12.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-content h1{
+    font-size: 3rem;
+    color: var(--secondary-color);
+    text-align: center;
+    display: var(--scrollbar-display);
+    z-index: 52;
+}
+
+.main-content h2{
+    font-size: 2rem;
+    color: var(--secondary-color);
+    text-align: center;
+    font-weight: 400;
+    margin: 3rem 0;
+    z-index: 53;
+}
+
+.mouse-scroll{
+    width: 3rem;
+    height: 5rem;
+    border-radius: 5rem;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    z-index: 54;
+}
+
+.mouse-wheel{
+    width: .4rem;
+    height: 1.25rem;
+    background: var(--main-gradient);
+    margin-top: 1rem;
+    border-radius: 1rem;
+    transition: all 1s ease;
+}
+
+.bg-images{
+    position: absolute;
+    width: 100vw;
+    height: 120vh;
+    top: 0;
+    z-index: 50;
+}
+
+.bg-1{
+    height: 35vh;
+    width: a;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .3s;
+}
+.bg-2, .bg-3, .bg-4{
+    height: 55vh;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: .3s;
+}
+
+/*---------- Responsive ----------*/
+
+@media (min-width: 1000px){
+
+    /*---------- Landing Page ----------*/
+
+    /*Hero section*/
+    #hero-section{
+        height: 159vh;
+    }
+    .bg-images{
+        height: 160vh;
+    }
+    .main-content h1{
+        font-size: 4rem;
+    }
+    
+    .main-content h2{
+        font-size: 2.5rem;
+        margin: 4rem 0;
+    }
+
+    .bg-1{
+        width: 25vw;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: .3s;
+    }
+    .bg-2, .bg-3, .bg-4{
+        width: 100vw;
+        height: auto;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transition: .3s;
+    }
+}
