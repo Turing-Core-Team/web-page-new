@@ -6,12 +6,13 @@
 :root{
     --primary-color: black;
     --secondary-color: white;
-    --tb-purple: #AA33AA;
+    --tb-purple: rgb(170, 51, 170);
     --tb-pink: #F76382;
     --tb-blue: #018BA9;
     --tb-light-pink: #FFBDF9;
     --header-color: rgba(0, 0, 0, 0.3);
     --header-color-scroll: rgba(255, 255, 255, 0.3);
+    --dark-gray: rgb(80, 80, 80);
     --gray: rgba(0, 0, 0, 0.1);
     --main-gradient: linear-gradient(135deg, rgba(1,139,169,1) 0%, rgba(170,51,170,1) 100%);
     --scrollbar-display: block;
@@ -19,7 +20,6 @@
 
 body{
     overflow-x: hidden;
-    min-height: 600vh;
 }
 
 .hidden{
@@ -32,6 +32,10 @@ h1::selection, h2::selection, p::selection, a::selection, b::selection{
 
 img::selection{
     background-color: transparent;
+}
+
+.desktop{
+    display: none;
 }
 
 /*---------- Landing Page ----------*/
@@ -68,6 +72,10 @@ header img{
 
 .header-images-scroll{
     filter: invert(1);
+}
+
+.desktop{
+    display: none;
 }
 
 .header-logo-desktop{
@@ -193,7 +201,7 @@ b{
     color: var(--tb-blue);
 }
 
-/*Separator*/
+/*First separator*/
 
 .first-separator{
     width: 100vw;
@@ -223,13 +231,93 @@ b{
 .interests{
     width: 100vw;
     height: 12.5rem;
-    background-color: var(--gray);
+    background-color: rgb(153, 174, 175);
     margin-bottom: 6rem;
+}
+
+/*Second Separator*/
+
+.second-separator{
+    height: 25rem;
+    width: 100vw;
+    background-color: var(--tb-purple);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    transition: .2s;
+}
+
+.second-separator-top{
+    width: 100vw;
+    margin-top: -.2rem;
+}
+
+.second-separator-bottom{
+    width: 100vw;
+    margin-bottom: -.2rem;
+}
+
+/*How*/
+
+#how{
+    width: 100vw;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gray{
+    color: var(--dark-gray);
+}
+
+.carousel-content, .carousel-title{
+    margin-top: 3rem;
+}
+
+.carousel-title{
+    font-weight: 600;
+}
+
+.carousel-controls{
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem 0;
+}
+
+.left-arrow, .right-arrow{
+    width: 2.5rem;
+    height: auto;
+    cursor: pointer;
+}
+
+.left-arrow{
+    transform: scaleX(-1);
+}
+
+.kirby{
+    width: 2rem;
+    height: 2rem;
+    border: black solid .3rem;
+    border-radius: 5rem;
+    cursor: pointer;
 }
 
 /*---------- Responsive ----------*/
 
 @media (min-width: 1000px){
+
+    .desktop{
+        display: flex;
+    }
+
+    .mobile{
+        display: none;
+    }
 
     /*---------- Landing Page ----------*/
 
@@ -278,6 +366,11 @@ b{
     .bg-images{
         height: 160vh;
     }
+
+    .main-content{
+        padding-top: 15vh;
+    }
+
     .main-content h1{
         font-size: 4rem;
     }
@@ -370,5 +463,58 @@ b{
         width: 6.5vw;
         height: 7.5vw;
         display: flex;
+    }
+
+    /*Second Separator*/
+
+    .second-separator{
+        height: 40rem;
+    }
+
+    /*How*/
+
+    #how{
+        padding: 0;
+        margin-top: 7.5rem;
+    }
+
+    .carousel{
+        display: flex;
+        width: 100vw;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .carousel-content, .carousel-title{
+        margin-top: 0;
+        width: 35vw;
+    }
+
+    .carousel-content{
+        font-size: 1.5rem;
+    }
+
+    .carousel-controls{
+        width: 40vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2rem 0 15rem 0;
+    }
+
+    .left-arrow, .right-arrow{
+        width: 2.5rem;
+        height: auto;
+    }
+
+    .left-arrow{
+        transform: scaleX(-1);
+    }
+
+    .kirby{
+        width: 2rem;
+        height: 2rem;
+        border: black solid .3rem;
+        border-radius: 5rem;
     }
 }
