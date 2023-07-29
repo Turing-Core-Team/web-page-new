@@ -43,8 +43,12 @@ header{
     transition: .3s;
 }
 
+.header-links{
+    display: none;
+}
+
 header img{
-    height: 60%;
+    height: 45%;
     margin: 0 3rem;
 }
 
@@ -55,6 +59,10 @@ header img{
 
 .header-images-scroll{
     filter: invert(1);
+}
+
+.header-logo-desktop{
+    display: none;
 }
 
 /*Hero Section*/
@@ -88,7 +96,7 @@ header img{
     color: var(--secondary-color);
     text-align: center;
     font-weight: 400;
-    margin: 3rem 0;
+    margin: 2.5rem 0;
     z-index: 53;
     width: 80vw;
 }
@@ -170,7 +178,7 @@ b{
 }
 
 .purple{
-    color: var(--tb-purple);
+    color: var(--tb-purple) !important;
 }
 .blue{
     color: var(--tb-blue);
@@ -198,13 +206,55 @@ b{
     height: 12vw;
 }
 
+.first-hexagon-desktop{
+    display: none;
+}
+
 /*---------- Responsive ----------*/
 
 @media (min-width: 1000px){
 
     /*---------- Landing Page ----------*/
 
+    /*Header*/
+
+    header{
+        height: 15vh;
+    }
+
+    .header-logo-desktop{
+        display: flex;
+        height: 70%;
+        cursor: pointer;
+        margin-left: 6rem;
+    }
+
+    .header-logo{
+        display: none;
+    }
+
+    .header-menu{
+        display: none;
+    }
+
+    .header-links{
+        width: calc(50vw - 6rem);
+        display: flex;
+        justify-content: space-between;
+        margin-right: 6rem;
+    }
+
+    .header-links a{
+        color: var(--secondary-color);
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: 600;
+        transition: .2s;
+    }
+    
+
     /*Hero section*/
+
     #hero-section{
         height: 159vh;
     }
@@ -216,8 +266,13 @@ b{
     }
     
     .main-content h2{
-        font-size: 2.5rem;
+        font-size: 2.75rem;
         margin: 4rem 0;
+        width: 60vw;
+    }
+
+    .mouse-scroll{
+        height: 4.5rem;
     }
 
     .bg-1{
@@ -235,5 +290,69 @@ b{
         bottom: 0;
         right: 0;
         transition: .3s;
+    }
+
+    /*What we are*/
+
+    #what-we-are{
+        padding-top: 0;
+    }
+    #purpose{
+        padding-top: 7.5rem;
+    }
+    
+    .section-title{
+        font-size: 3rem;
+        padding: 0 0 6rem 0;
+        font-weight: 600;
+    }
+    
+    .section-content{
+        font-size: 2rem;
+        width: 55vw;
+        padding-bottom: 5rem;
+    }
+    
+    .separate{
+        display: none;
+        padding: 4rem 0;
+    }
+    
+    b{
+        font-weight: 600;
+    }
+    
+    .purple{
+        color: var(--tb-purple);
+    }
+    .blue{
+        color: var(--tb-blue);
+    }
+    
+    /*Separator*/
+
+    .second-line{
+        display: none;
+    }
+    
+    .first-separator{
+        justify-content: left;
+        margin-top: 3rem;
+    }
+    
+    .separator-line{
+        width: 40vw;
+        margin-right: 5.75vw;
+        border-top: var(--tb-purple) dotted .4rem;
+    }
+    
+    .first-hexagon{
+        display: none;
+    }
+
+    .first-hexagon-desktop{
+        width: 6.5vw;
+        height: 7.5vw;
+        display: flex;
     }
 }

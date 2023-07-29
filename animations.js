@@ -16,24 +16,27 @@ export function mouseAnimation(mouseWheel) {
   }, 1000);
 }
 
-export function scrollAnimation(bg1, bg2, bg3, images, hClass, iClass) {
+export function scrollAnimation(bg1, bg2, bg3, images, hClass, iClass, aClass) {
     const $header = document.querySelector("header"),
     $bg1 = d.querySelector(bg1),
     $bg2 = d.querySelector(bg2),
     $bg3 = d.querySelector(bg3),
+    $headerA = d.querySelectorAll("header a"),
     scrollPosition = window.scrollY,
     windowHeight = window.innerHeight;
 
     if (scrollPosition >= windowHeight * 1) {
         document.querySelectorAll(images).forEach(a => a.classList.add(iClass));
         $header.classList.add(hClass);
+        $headerA.forEach($a => $a.classList.add(aClass));
         $bg3.classList.remove('hidden');
     } else {
         document.querySelectorAll(images).forEach(a => a.classList.remove(iClass));
         $bg3.classList.add('hidden');
         $header.classList.remove(hClass);
+        $headerA.forEach($a => $a.classList.remove(aClass));
     }
-    if (scrollPosition >= windowHeight * 0.7) {
+    if (scrollPosition >= windowHeight * 0.5) {
         $bg2.classList.remove('hidden');
     } else {
         $bg2.classList.add('hidden');
