@@ -12,17 +12,26 @@
     --tb-light-pink: #FFBDF9;
     --header-color: rgba(0, 0, 0, 0.3);
     --header-color-scroll: rgba(255, 255, 255, 0.3);
+    --gray: rgba(0, 0, 0, 0.1);
     --main-gradient: linear-gradient(135deg, rgba(1,139,169,1) 0%, rgba(170,51,170,1) 100%);
     --scrollbar-display: block;
 }
 
 body{
-    height: 250vh;
     overflow-x: hidden;
+    min-height: 600vh;
 }
 
 .hidden{
     opacity: 0;
+}
+
+h1::selection, h2::selection, p::selection, a::selection, b::selection{
+    background-color: var(--gray);
+}
+
+img::selection{
+    background-color: transparent;
 }
 
 /*---------- Landing Page ----------*/
@@ -139,7 +148,7 @@ header img{
 .bg-2, .bg-3, .bg-4{
     height: 55vh;
     position: absolute;
-    bottom: 0;
+    bottom: -1vh;
     right: 0;
     transition: .3s;
 }
@@ -208,6 +217,14 @@ b{
 
 .first-hexagon-desktop{
     display: none;
+}
+/*Purpose*/
+
+.interests{
+    width: 100vw;
+    height: 12.5rem;
+    background-color: var(--gray);
+    margin-bottom: 6rem;
 }
 
 /*---------- Responsive ----------*/
@@ -314,8 +331,7 @@ b{
     }
     
     .separate{
-        display: none;
-        padding: 4rem 0;
+        padding:  0 0 6rem 0;
     }
     
     b{
