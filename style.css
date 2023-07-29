@@ -238,9 +238,9 @@ b{
 /*Second Separator*/
 
 .second-separator{
-    height: 25rem;
+    height: 20rem;
     width: 100vw;
-    background-color: var(--tb-purple);
+    background: var(--main-gradient);
     overflow: hidden;
     display: flex;
     justify-content: space-between;
