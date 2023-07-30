@@ -7,8 +7,8 @@
     --primary-color: black;
     --secondary-color: white;
     --tb-purple: rgb(170, 51, 170);
-    --tb-pink: #F76382;
-    --tb-blue: #018BA9;
+    --tb-pink: rgb(247, 99, 130);
+    --tb-blue: rgb(1, 139, 169);
     --tb-light-pink: #FFBDF9;
     --header-color: rgba(0, 0, 0, 0.3);
     --header-color-scroll: rgba(255, 255, 255, 0.3);
@@ -240,7 +240,7 @@ b{
 .second-separator{
     height: 20rem;
     width: 100vw;
-    background: var(--main-gradient);
+    background-color: var(--tb-purple);
     overflow: hidden;
     display: flex;
     justify-content: space-between;
@@ -299,11 +299,9 @@ b{
     transform: scaleX(-1);
 }
 
-.kirby{
-    width: 2rem;
+.carousel-hexagon{
+    width: 2.25rem;
     height: 2rem;
-    border: black solid .3rem;
-    border-radius: 5rem;
     cursor: pointer;
 }
 

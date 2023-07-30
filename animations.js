@@ -36,7 +36,7 @@ export function scrollAnimation(bg1, bg2, bg3, images, hClass, iClass, aClass) {
         $header.classList.remove(hClass);
         $headerA.forEach($a => $a.classList.remove(aClass));
     }
-    if (scrollPosition >= windowHeight * 0.5) {
+    if (scrollPosition >= windowHeight * 0.4) {
         $bg2.classList.remove('hidden');
     } else {
         $bg2.classList.add('hidden');
