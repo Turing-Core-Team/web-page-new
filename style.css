@@ -43,7 +43,7 @@ img::selection{
 /*Header*/
 
 header{
-    height: 12.5vh;
+    height: 10vh;
     width: 100vw;
     position: fixed;
     top: 0;
@@ -63,6 +63,10 @@ header{
 header img{
     height: 45%;
     margin: 0 3rem;
+}
+
+.header-menu{
+    height: 40%;
 }
 
 .header-scroll{
@@ -93,7 +97,7 @@ header img{
 .main-content{
     width: 100vw;
     height: 85vh;
-    padding-top: 12.5vh;
+    padding-top: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -305,9 +309,16 @@ b{
     cursor: pointer;
 }
 
+/*Footer*/
+
+footer{
+    width: 100vw;
+    height: 50vh;
+}
+
 /*---------- Responsive ----------*/
 
-@media (min-width: 1000px){
+@media (min-width: 800px){
 
     .desktop{
         display: flex;
