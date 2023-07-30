@@ -60,6 +60,10 @@ header{
     display: none;
 }
 
+.header-links a:hover{
+    text-decoration: underline;
+}
+
 header img{
     height: 45%;
     margin: 0 3rem;
@@ -313,7 +317,41 @@ b{
 
 footer{
     width: 100vw;
-    height: 50vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-cta{
+    width: 60vw;
+    height: 3.5rem;
+    font-weight: 600;
+    border: var(--tb-purple) solid .35rem;
+    font-size: 1.6rem;
+    color: var(--tb-purple);
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.social-networks{
+    height: 8rem;
+    padding: 1rem 0;
+    background: var(--main-gradient);
+    margin-top: 5rem;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.social-networks img{
+    width: 2rem;
+    margin: 0 3rem;
 }
 
 /*---------- Responsive ----------*/
@@ -520,10 +558,30 @@ footer{
         transform: scaleX(-1);
     }
 
-    .kirby{
-        width: 2rem;
-        height: 2rem;
-        border: black solid .3rem;
-        border-radius: 5rem;
+    /*Footer*/
+
+    .footer-cta{
+        width: auto;
+        padding: 0 5rem;
+        height: 3.5rem;
+        margin-top: 1rem;
+        background-color: var(--secondary-color);
+        z-index: 46;
+        border: transparent solid .3rem;
+        border-image: var(--main-gradient) 1;
+        color: var(--tb-purple);
+    }
+
+    .social-networks{
+        height: 8rem;
+        padding: 2.75rem 15vw 1rem 15vw;
+        margin-top: -1.75rem;
+        z-index: 45;
+        width: 70vw;
+    }
+
+    .social-networks img{
+        width: 2.5rem;
+        margin: 0 3rem;
     }
 }

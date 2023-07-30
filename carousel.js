@@ -1,6 +1,6 @@
 const d = document
 
-export function carousel(controls, title, content,  titlesArr, contentsArr, leftArrow, rightArrow, colors, hexagon, desktopHexagon, colorsName) {
+export function carousel(controls, title, content,  titlesArr, contentsArr, leftArrow, rightArrow, colors, hexagon, desktopHexagon, colorsName, bgGradients) {
     const $rightArrow = d.querySelector(rightArrow),
     $leftArrow = d.querySelector(leftArrow),
     $controls = d.querySelectorAll(controls),
@@ -21,6 +21,7 @@ export function carousel(controls, title, content,  titlesArr, contentsArr, left
             $content.textContent = contentsArr[actualContent]
             d.documentElement.style.setProperty("--tb-purple", colors[actualContent])
             d.documentElement.style.setProperty("--tb-blue", colors[actualContent])
+            d.documentElement.style.setProperty("--main-gradient", bgGradients[actualContent])
             $hexagon.setAttribute("src", `${colorsName[actualContent]} hexagon normal.png`)
             $desktopHexagon.setAttribute("src", `${colorsName[actualContent]} hexagon.png`)
         })
@@ -35,6 +36,7 @@ export function carousel(controls, title, content,  titlesArr, contentsArr, left
             $content.textContent = contentsArr[actualContent]
             d.documentElement.style.setProperty("--tb-purple", colors[actualContent])
             d.documentElement.style.setProperty("--tb-blue", colors[actualContent])
+            d.documentElement.style.setProperty("--main-gradient", bgGradients[actualContent])
             $hexagon.setAttribute("src", `${colorsName[actualContent]} hexagon normal.png`)
             $desktopHexagon.setAttribute("src", `${colorsName[actualContent]} hexagon.png`)
         }
@@ -49,6 +51,7 @@ export function carousel(controls, title, content,  titlesArr, contentsArr, left
             $content.textContent = contentsArr[actualContent]
             d.documentElement.style.setProperty("--tb-purple", colors[actualContent])
             d.documentElement.style.setProperty("--tb-blue", colors[actualContent])
+            d.documentElement.style.setProperty("--main-gradient", bgGradients[actualContent])
             $hexagon.setAttribute("src", `${colorsName[actualContent]} hexagon normal.png`)
             $desktopHexagon.setAttribute("src", `${colorsName[actualContent]} hexagon.png`)
         }
