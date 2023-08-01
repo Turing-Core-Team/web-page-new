@@ -239,7 +239,7 @@ b{
 .interests{
     width: 100vw;
     height: 12.5rem;
-    background-color: rgb(153, 174, 175);
+    background-color: rgb(211, 211, 211);
     margin-bottom: 6rem;
 }
 
@@ -279,6 +279,12 @@ b{
 
 .gray{
     color: var(--dark-gray);
+}
+
+.complete-carousel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .carousel-content, .carousel-title{
@@ -335,7 +341,6 @@ footer{
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
-    border: none;
 }
 
 .social-networks{
@@ -571,18 +576,31 @@ footer{
         border: transparent solid .3rem;
         border-image: var(--main-gradient) 1;
         color: var(--tb-purple);
+        transition: .2s;
+    }
+
+    .footer-cta:hover{
+        padding: 0 6.5rem;
     }
 
     .social-networks{
         height: 8rem;
-        padding: 2.75rem 15vw 1rem 15vw;
+        padding: 2.75rem 20vw 1rem 20vw;
         margin-top: -1.75rem;
         z-index: 45;
         justify-content: space-between;
-        width: 70vw;
+        width: 60vw;
     }
 
     .social-networks img{
-        width: 2.5rem;
+        width: 2rem;
+        margin: 0;
+        opacity: .7;
+        transition: .2s;
+        cursor: pointer;
+    }
+
+    .social-networks img:hover{
+        opacity: 1;
     }
 }
