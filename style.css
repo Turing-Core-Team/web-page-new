@@ -11,11 +11,12 @@
     --tb-blue: rgb(1, 139, 169);
     --tb-light-pink: #FFBDF9;
     --header-color: rgba(0, 0, 0, 0.3);
-    --header-color-scroll: rgba(255, 255, 255, 0.3);
+    --header-color-scroll: rgba(255, 255, 255, 0.4);
     --dark-gray: rgb(80, 80, 80);
     --gray: rgba(0, 0, 0, 0.1);
     --main-gradient: linear-gradient(135deg, rgba(1,139,169,1) 0%, rgba(170,51,170,1) 100%);
     --scrollbar-display: block;
+    --menu-lines:rgba(255, 255, 255, 0.2);
 }
 
 body{
@@ -24,6 +25,10 @@ body{
 
 .hidden{
     opacity: 0;
+}
+
+.none{
+    display: none;
 }
 
 h1::selection, h2::selection, p::selection, a::selection, b::selection{
@@ -39,6 +44,76 @@ img::selection{
 }
 
 /*---------- Landing Page ----------*/
+
+/*Menu*/
+
+#menu{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 150;
+    top: 0;
+    right: -300px;
+    transition: right .3s ease-in-out;
+}
+
+.menu-header{
+    position: fixed;
+    top: 0;
+    height: 10vh;
+    width: 100vw;
+    background-color: var(--header-color);
+    z-index: 160;
+    border-radius: 3rem 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-menu{
+    height: 40%;
+    margin: 0 2rem;
+    cursor: pointer;
+}
+
+.menu-options{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    bottom: 0;
+    background: var(--main-gradient);
+    z-index: 151;
+    border-radius: 3rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-options a{
+    top: 15vh;
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 1.6rem;
+    text-align: right;
+    padding: 0 2rem .5rem 0;
+}
+
+.top-separate{
+    margin-top: 15vh;
+}
+
+.menu-line{
+    width: 75vw;
+    margin-left: 25vw;
+    border-top: var(--menu-lines) dashed .2rem;
+    right: 0;
+    padding: 0 0 3.5rem 0;
+}
+
+.menu-bg{
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+}
 
 /*Header*/
 
@@ -65,12 +140,13 @@ header{
 }
 
 header img{
-    height: 45%;
-    margin: 0 3rem;
+    height: 55%;
+    margin: 0 2rem;
 }
 
 .header-menu{
-    height: 40%;
+    height: 45%;
+    cursor: pointer;
 }
 
 .header-scroll{
@@ -236,12 +312,12 @@ b{
 }
 /*Purpose*/
 
-.interests{
+/*.interests{
     width: 100vw;
     height: 12.5rem;
     background-color: rgb(211, 211, 211);
     margin-bottom: 6rem;
-}
+}*/
 
 /*Second Separator*/
 

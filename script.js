@@ -1,4 +1,4 @@
-import { mouseAnimation, scrollAnimation} from "./animations.js"
+import { hamburgerMenu, mouseAnimation, scrollAnimation} from "./animations.js"
 import { carousel } from "./carousel.js"
 
 const d = document,
@@ -11,6 +11,7 @@ bgGradients = ["linear-gradient(135deg, rgba(1,139,169,1) 0%, rgba(170,51,170,1)
 
 d.addEventListener("DOMContentLoaded", e => {
     setInterval(e => mouseAnimation(".mouse-wheel"), 1750)
+    hamburgerMenu("#menu", ".header-menu", ".close-menu")
     w.addEventListener("scroll", e => scrollAnimation(".bg-2", ".bg-3", ".bg-4", "header img", "header-scroll", "header-images-scroll", "purple"))
     carousel(".carousel-hexagon", ".carousel-title", ".carousel-content", titles, contents, ".left-arrow", ".right-arrow", colors, ".first-hexagon", ".first-hexagon-desktop", colorsName, bgGradients)
 })

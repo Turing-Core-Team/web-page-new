@@ -42,3 +42,18 @@ export function scrollAnimation(bg1, bg2, bg3, images, hClass, iClass, aClass) {
         $bg2.classList.add('hidden');
       }
   }
+
+export function hamburgerMenu(menu, open, close) {
+  const $menu = d.querySelector(menu),
+  $open = d.querySelector(open),
+  $close = d.querySelector(close)
+
+  $open.addEventListener("click", () => {
+      $menu.classList.remove("none");
+      setTimeout(() => $menu.style.right = "0", 10)
+  });
+  $close.addEventListener("click", () => {
+      $menu.style.right = "-100vw";
+      setTimeout(() => $menu.classList.add("none"), 300)
+  });
+}
