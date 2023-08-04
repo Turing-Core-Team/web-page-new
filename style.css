@@ -80,7 +80,7 @@ img::selection{
     position: fixed;
     width: 100vw;
     height: 100vh;
-    bottom: 0;
+    top: 0;
     background: var(--main-gradient);
     z-index: 151;
     border-radius: 3rem 0 0 0;
@@ -98,7 +98,7 @@ img::selection{
 }
 
 .top-separate{
-    margin-top: 20vh;
+    margin-top: 27.5vh;
 }
 
 .menu-line{
