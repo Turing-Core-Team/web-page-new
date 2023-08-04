@@ -50,7 +50,6 @@ img::selection{
 #menu{
     position: absolute;
     width: 100vw;
-    height: 100vh;
     z-index: 150;
     top: 0;
     right: -300px;
@@ -79,7 +78,7 @@ img::selection{
 .menu-options{
     position: fixed;
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
     top: 0;
     background: var(--main-gradient);
     z-index: 151;
@@ -110,9 +109,11 @@ img::selection{
 }
 
 .menu-bg{
-    width: 100vw;
+    height: 55vh;
     position: absolute;
-    bottom: 0;
+    bottom: -1vh;
+    right: 0;
+    transition: .3s;
 }
 
 /*Header*/
