@@ -6,9 +6,9 @@
 :root{
     --primary-color: black;
     --secondary-color: white;
-    --tb-purple: rgb(170, 51, 170);
-    --tb-pink: rgb(247, 99, 130);
-    --tb-blue: rgb(1, 139, 169);
+    --tb-purple: #aa33aa;
+    --tb-pink: #f76382;
+    --tb-blue: #018ba9;
     --tb-light-pink: #FFBDF9;
     --header-color: rgba(0, 0, 0, 0.3);
     --header-color-scroll: rgba(255, 255, 255, 0.4);
@@ -17,6 +17,14 @@
     --main-gradient: linear-gradient(135deg, rgba(1,139,169,1) 0%, rgba(170,51,170,1) 100%);
     --scrollbar-display: block;
     --menu-lines:rgba(255, 255, 255, 0.2);
+    --cursor: url(assets/purple_cursor.png) , default;
+    --pointer: url(assets/purple_pointer.png) , default;
+    --white-cursor: url(assets/white_cursor.png) , default;
+    --white-pointer: url(assets/white_pointer.png) , default;
+}
+
+html{
+    cursor: var(--cursor);
 }
 
 body{
@@ -72,7 +80,7 @@ img::selection{
 .close-menu{
     height: 40%;
     margin: 0 2rem;
-    cursor: pointer;
+    cursor: var(--pointer);
 }
 
 .menu-options{
@@ -94,6 +102,7 @@ img::selection{
     font-size: 1.6rem;
     text-align: right;
     padding: 0 2rem .5rem 0;
+    cursor: var(--pointer);
 }
 
 .top-separate{
@@ -130,10 +139,15 @@ header{
     backdrop-filter: blur(10px);
     z-index: 100;
     transition: .3s;
+    cursor: var(--white-cursor);
 }
 
 .header-links{
     display: none;
+}
+
+.header-links a{
+    cursor: var(--white-pointer);
 }
 
 .header-links a:hover{
@@ -147,7 +161,7 @@ header img{
 
 .header-menu{
     height: 45%;
-    cursor: pointer;
+    cursor: var(--pointer);
 }
 
 .header-scroll{
@@ -173,6 +187,7 @@ header img{
     height: 120vh;
     width: 100vw;
     background: var(--main-gradient);
+    cursor: var(--white-cursor);
 }
 
 .main-content{
@@ -358,6 +373,16 @@ b{
     color: var(--dark-gray);
 }
 
+.purple-pointer{
+    cursor: url(assets/purple_pointer.png) , pointer !important;
+}
+.blue-pointer{
+    cursor: url(assets/blue_pointer.png) , pointer !important;
+}
+.pink-pointer{
+    cursor: url(assets/pink_pointer.png) , pointer !important;
+}
+
 .complete-carousel{
     display: flex;
     flex-direction: column;
@@ -365,7 +390,7 @@ b{
 }
 
 .carousel-content, .carousel-title{
-    margin-top: 3rem;
+    margin-top: 2.5rem;
 }
 
 .carousel-title{
@@ -377,13 +402,13 @@ b{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 5rem 0;
+    padding: 3rem 0;
 }
 
 .left-arrow, .right-arrow{
-    width: 2.5rem;
+    width: 2rem;
     height: auto;
-    cursor: pointer;
+    cursor: var(--pointer);
 }
 
 .left-arrow{
@@ -391,9 +416,9 @@ b{
 }
 
 .carousel-hexagon{
-    width: 2.25rem;
-    height: 2rem;
-    cursor: pointer;
+    width: 2rem;
+    height: 1.8rem;
+    cursor: var(--pointer);
 }
 
 /*Footer*/
@@ -460,7 +485,7 @@ footer{
     .header-logo-desktop{
         display: flex;
         height: 70%;
-        cursor: pointer;
+        cursor: var(--white-pointer);
         margin-left: 6rem;
     }
 
@@ -654,6 +679,7 @@ footer{
         border-image: var(--main-gradient) 1;
         color: var(--tb-purple);
         transition: .2s;
+        cursor: var(--white-pointer);
     }
 
     .footer-cta:hover{
@@ -667,6 +693,7 @@ footer{
         z-index: 45;
         justify-content: space-between;
         width: 60vw;
+        cursor: var(--white-cursor);
     }
 
     .social-networks img{
@@ -674,7 +701,7 @@ footer{
         margin: 0;
         opacity: .7;
         transition: .2s;
-        cursor: pointer;
+        cursor: var(--white-pointer);
     }
 
     .social-networks img:hover{

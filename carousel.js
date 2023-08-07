@@ -20,7 +20,8 @@ export function carousel(controls, title, content,  titlesArr, contentsArr, left
             $title.textContent = titlesArr[actualContent]
             $content.textContent = contentsArr[actualContent]
             d.documentElement.style.setProperty("--tb-purple", colors[actualContent])
-            d.documentElement.style.setProperty("--tb-blue", colors[actualContent])
+            d.documentElement.style.setProperty("--cursor", `url(assets/${colorsName[actualContent]}_cursor.png), default`)
+            d.documentElement.style.setProperty("--pointer", `url(assets/${colorsName[actualContent]}_pointer.png), default`)
             d.documentElement.style.setProperty("--main-gradient", bgGradients[actualContent])
             $hexagon.setAttribute("src", `assets/${colorsName[actualContent]} hexagon normal.png`)
             $desktopHexagon.setAttribute("src", `assets/${colorsName[actualContent]} hexagon.png`)
@@ -35,7 +36,8 @@ export function carousel(controls, title, content,  titlesArr, contentsArr, left
             $title.textContent = titlesArr[actualContent]
             $content.textContent = contentsArr[actualContent]
             d.documentElement.style.setProperty("--tb-purple", colors[actualContent])
-            d.documentElement.style.setProperty("--tb-blue", colors[actualContent])
+            d.documentElement.style.setProperty("--cursor", `url(assets/${colorsName[actualContent]}_cursor.png), default`)
+            d.documentElement.style.setProperty("--pointer", `url(assets/${colorsName[actualContent]}_pointer.png), default`)
             d.documentElement.style.setProperty("--main-gradient", bgGradients[actualContent])
             $hexagon.setAttribute("src", `assets/${colorsName[actualContent]} hexagon normal.png`)
             $desktopHexagon.setAttribute("src", `assets/${colorsName[actualContent]} hexagon.png`)
@@ -50,7 +52,8 @@ export function carousel(controls, title, content,  titlesArr, contentsArr, left
             $title.textContent = titlesArr[actualContent]
             $content.textContent = contentsArr[actualContent]
             d.documentElement.style.setProperty("--tb-purple", colors[actualContent])
-            d.documentElement.style.setProperty("--tb-blue", colors[actualContent])
+            d.documentElement.style.setProperty("--cursor", `url(assets/${colorsName[actualContent]}_cursor.png), default`)
+            d.documentElement.style.setProperty("--pointer", `url(assets/${colorsName[actualContent]}_pointer.png), default`)
             d.documentElement.style.setProperty("--main-gradient", bgGradients[actualContent])
             $hexagon.setAttribute("src", `assets/${colorsName[actualContent]} hexagon normal.png`)
             $desktopHexagon.setAttribute("src", `assets/${colorsName[actualContent]} hexagon.png`)
