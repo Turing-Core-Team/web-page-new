@@ -315,7 +315,7 @@ b{
 .separator-line{
     width: 40vw;
     height: 0;
-    border-top: var(--tb-blue) dotted .3rem;
+    border-top: var(--tb-purple) dashed .25rem;
 }
 
 .first-hexagon{
@@ -398,7 +398,7 @@ b{
 }
 
 .carousel-controls{
-    width: 80vw;
+    width: 75vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -484,7 +484,7 @@ footer{
 
     .header-logo-desktop{
         display: flex;
-        height: 70%;
+        height: 65%;
         cursor: var(--white-pointer);
         margin-left: 6rem;
     }
@@ -498,7 +498,7 @@ footer{
     }
 
     .header-links{
-        width: calc(50vw - 6rem);
+        width: calc(45vw - 6rem);
         display: flex;
         justify-content: space-between;
         margin-right: 6rem;
@@ -507,7 +507,7 @@ footer{
     .header-links a{
         color: var(--secondary-color);
         text-decoration: none;
-        font-size: 1.4rem;
+        font-size: 1.35rem;
         font-weight: 500;
     }
     
@@ -640,7 +640,7 @@ footer{
     .carousel{
         display: flex;
         width: 100vw;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
     }
 
@@ -653,10 +653,12 @@ footer{
     .carousel-content{
         font-size: 1.35rem;
         padding: 3rem;
+        margin-left: 5rem;
+
     }
 
     .carousel-controls{
-        width: 40vw;
+        width: 30vw;
         display: flex;
         justify-content: space-around;
         align-items: center;
