@@ -151,7 +151,7 @@ header{
 }
 
 .header-links a:hover{
-    text-decoration: underline;
+    font-weight: 600;
 }
 
 header img{
@@ -507,9 +507,8 @@ footer{
     .header-links a{
         color: var(--secondary-color);
         text-decoration: none;
-        font-size: 1.5rem;
-        font-weight: 600;
-        transition: .2s;
+        font-size: 1.4rem;
+        font-weight: 500;
     }
     
 
@@ -527,17 +526,18 @@ footer{
     }
 
     .main-content h1{
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
     
     .main-content h2{
-        font-size: 2.75rem;
-        margin: 4rem 0;
+        font-size: 2.5rem;
+        margin: 3.5rem 0;
         width: 60vw;
     }
 
     .mouse-scroll{
-        height: 4.5rem;
+        height: 4.25rem;
+        width: 2.75rem;
     }
 
     .bg-1{
@@ -563,23 +563,23 @@ footer{
         padding-top: 0;
     }
     #purpose{
-        padding-top: 7.5rem;
+        padding-top: 7rem;
     }
     
     .section-title{
-        font-size: 3rem;
-        padding: 0 0 6rem 0;
+        font-size: 2.75rem;
+        padding: 0 0 4rem 0;
         font-weight: 600;
     }
     
     .section-content{
-        font-size: 2rem;
+        font-size: 1.75rem;
         width: 55vw;
-        padding-bottom: 5rem;
+        padding-bottom: 4.5rem;
     }
     
     .separate{
-        padding:  0 0 6rem 0;
+        padding:  0 0 4rem 0;
     }
     
     b{
@@ -607,7 +607,7 @@ footer{
     .separator-line{
         width: 40vw;
         margin-right: 5.75vw;
-        border-top: var(--tb-purple) dotted .4rem;
+        border-top: var(--tb-purple) dashed .25rem;
     }
     
     .first-hexagon{
@@ -615,22 +615,26 @@ footer{
     }
 
     .first-hexagon-desktop{
-        width: 6.5vw;
-        height: 7.5vw;
+        width: 5.75vw;
+        height: 6.5vw;
         display: flex;
     }
 
     /*Second Separator*/
 
     .second-separator{
-        height: 40rem;
+        height: 37.5rem;
     }
 
     /*How*/
 
     #how{
         padding: 0;
-        margin-top: 7.5rem;
+        margin-top: 6rem;
+    }
+
+    #how h2{
+        padding-bottom: 0;
     }
 
     .carousel{
@@ -643,10 +647,12 @@ footer{
     .carousel-content, .carousel-title{
         margin-top: 0;
         width: 35vw;
+        padding: 0;
     }
 
     .carousel-content{
-        font-size: 1.5rem;
+        font-size: 1.35rem;
+        padding: 3rem;
     }
 
     .carousel-controls{
@@ -654,11 +660,11 @@ footer{
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding: 2rem 0 15rem 0;
+        padding: 2rem 0 17.5rem 0;
     }
 
     .left-arrow, .right-arrow{
-        width: 2.5rem;
+        width: 2rem;
         height: auto;
     }
 
