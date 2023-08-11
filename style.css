@@ -15,6 +15,7 @@
     --dark-gray: rgb(80, 80, 80);
     --gray: rgba(0, 0, 0, 0.1);
     --main-gradient: linear-gradient(135deg, rgba(1,139,169,1) 0%, rgba(170,51,170,1) 100%);
+    --pink-gradient: linear-gradient(45deg, rgba(255,117,190,1) 0%, rgba(206,21,60,1) 100%);
     --scrollbar-display: block;
     --menu-lines:rgba(255, 255, 255, 0.2);
     --cursor: url(assets/purple_cursor.png) , default;
@@ -191,6 +192,10 @@ header img{
     z-index: 100;
 }
 
+.pink-gradient{
+    background: var(--pink-gradient) !important;
+}
+
 .main-content{
     width: 100vw;
     height: 85vh;
@@ -303,6 +308,10 @@ b{
 }
 .pink{
     color: var(--tb-pink);
+}
+
+.more-space{
+    padding: 4rem 0 8rem 0;
 }
 
 /*First separator*/
@@ -471,11 +480,78 @@ footer{
 #history{
     width: 100vw;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .timeline{
-    height: 100vh;
+    width: 100vw;
+    padding-bottom: 8rem;
+}
+
+.year{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.left{
+    justify-content: start;
+}
+
+.right{
+    justify-content: end;
+}
+
+.year-hexagon{
+    width: 30vw;
+    height: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(assets/filled\ pink\ hexagon.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.separator-line-year{
+    width: 35vw;
+    border-top: var(--tb-purple) dashed .25rem;
+}
+
+.year-hexagon h3{
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.year-element{
+    width: 60vw;
+    padding: 2rem 0;
+    margin-left: 20vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.year-element img{
+    width: 40%;
+    margin: 4rem 0 2rem 0;
+}
+
+.year-element-date{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--dark-gray);
+    margin-bottom: 1.5rem;
+}
+
+.year-element-content{
+    font-size: 1.1rem;
+    text-align: center;
 }
 
 /*---------- Responsive ----------*/
