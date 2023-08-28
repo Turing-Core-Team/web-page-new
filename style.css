@@ -801,6 +801,57 @@ footer{
     .social-networks img:hover{
         opacity: 1;
     }
+
+    /*---------- About page ----------*/
+
+    .timeline{
+        width: 100vw;
+        padding-bottom: 8rem;
+    }
+
+    .year-hexagon{
+        width: 8rem;
+        height: 8rem;
+        padding: 2rem 0;
+    }
+
+    .separator-line-year{
+        width: calc(50vw - 4rem);
+    }
+
+    .align-content{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 75vw;
+        margin-left: 12.5vw;
+    }
+
+    .year-element{
+        width: 20vw;
+        padding: 2rem 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .year-element img{
+        width: 40%;
+        margin: 4rem 0 2rem 0;
+    }
+
+    .year-element-date{
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--dark-gray);
+        margin-bottom: 1.5rem;
+    }
+
+    .year-element-content{
+        font-size: 1.1rem;
+        text-align: center;
+    }
 }
 
 @media (min-width: 1600px){
