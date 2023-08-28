@@ -149,7 +149,7 @@ header{
 
 .header-links a{
     cursor: var(--white-pointer);
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .header-links a:hover{
