@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos - TuringBox</title>
+    <link rel="shortcut icon" href="assets/TB_Símbolo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img src="assets/TB_Símbolo Blanco.png" alt="Logo TuringBox" class="header-logo" onclick="location.replace('https://turingbox.co')">
+        <img src="assets/TB_Identificador blanco.png" alt="Logo TuringBox" class="header-logo-desktop" onclick="location.replace('https://turingbox.co')">
+        <img src="assets/menu.png" alt="Menu" class="header-menu">
+        <div class="header-links">
+            <a href="projects.html" style="text-decoration: underline;">Proyectos</a>
+            <a href="colaboraciones.html">Colaboraciones</a>
+            <a href="about.html">Nosotros</a>
+        </div>
+    </header>
+    <div id="menu" class="mobile none">
+        <div class="menu-header">
+            <div class="empty"></div>
+            <img src="assets/close.png" alt="close menu" class="close-menu">
+        </div>
+        <div class="menu-options">
+            <a href="projects.html" class="top-separate">Proyectos</a>
+            <div class="menu-line"></div>
+            <a href="colaboraciones.html">Colaboraciones</a>
+            <div class="menu-line"></div>
+            <a href="about.html">Nosotros</a>
+            <div class="menu-line"></div>
+            <img src="assets/hero section bg 2.png" alt="Hexagonos" class="menu-bg">
+        </div>
+    </div>
+    <section id="hero-section" class="blue-gradient">
+        <div class="main-content">
+            <h2 data-aos="fade-up" data-aos-duration="1000">Conoce nuestros proyectos o propón el tuyo</h2>
+            <div class="mouse-scroll" data-aos="fade-up" data-aos-duration="1000">
+                <div class="mouse-wheel"></div>
+            </div>
+        </div>
+        <div class="bg-images" data-aos="fade-up" data-aos-duration="1000">
+            <img src="assets/hero section bg 1.png" alt="bg 1" class="bg-1">
+            <img src="assets/hero section bg 2.png" alt="bg 2" class="bg-2">
+            <img src="assets/hero section bg 3.png" alt="bg 2" class="bg-3 hidden">
+            <img src="assets/hero section bg 4.png" alt="bg 2" class="bg-4 hidden">
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 data-aos="fade-up" data-aos-duration="1000">Nuestros proyectos</h2>
+        <div class="project-board">
+            <figure class="project" data-aos="fade-up" data-aos-duration="1000">
+                <img src="assets/projects/bettercampus.png" alt="Imagen del proyecto" class="project-img">
+                <div class="status">
+                    <img src="assets/filled blue hexagon.png" alt="finalizado" class="status-img">
+                    <p class="status-text">Finalizado</p>
+                </div>
+                <h3 class="project-title">BetterCampus</h3>
+                <p class="project-desc">Herramienta para organizar tus horarios de inscripción.</p>
+                <div class="project-bottom">
+                    <div class="members">
+                        <figure class="circle"></figure>
+                        <figure class="circle"></figure>
+                        <figure class="circle"></figure>
+                    </div>
+                    <button class="see-project" data-project="bettercampus" style="background-color: #01A744;">Ver proyecto</button>
+                </div>
+            </figure>
+            <figure class="project" data-aos="fade-up" data-aos-duration="1000">
+                <img src="assets/projects/spun.png" alt="Imagen del proyecto" class="project-img">
+                <div class="status">
+                    <img src="assets/empty blue hexagon.png" alt="en proceso" class="status-img">
+                    <p class="status-text">En proceso</p>
+                </div>
+                <h3 class="project-title">SPUN</h3>
+                <p class="project-desc">Simulador para la prueba de la Universidad Nacional.</p>
+                <div class="project-bottom">
+                    <div class="members">
+                        <figure class="circle"></figure>
+                        <figure class="circle"></figure>
+                        <figure class="circle"></figure>
+                    </div>
+                    <button class="see-project" data-project="spun" style="background-color: #0F7490;">Ver proyecto</button>
+                </div>
+            </figure>
+            <figure class="project" data-aos="fade-up" data-aos-duration="1000">
+                <img src="assets/projects/tapli.png" alt="Imagen del proyecto" class="project-img">
+                <div class="status">
+                    <img src="assets/empty blue hexagon.png" alt="en proceso" class="status-img">
+                    <p class="status-text">En proceso</p>
+                </div>
+                <h3 class="project-title">Tapli</h3>
+                <p class="project-desc">Creación de menús digitales fácil y rápido.</p>
+                <div class="project-bottom">
+                    <div class="members">
+                        <figure class="circle"></figure>
+                        <figure class="circle"></figure>
+                        <figure class="circle"></figure>
+                    </div>
+                    <button class="see-project" data-project="tapli" style="background-color: #322724;">Ver proyecto</button>
+                </div>
+            </figure>
+        </div>
+    </section>
+
+    <footer>
+        <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">¿Quieres proponer un proyecto?</h2>
+        <a href="https://forms.gle/aTsjyo1CLjm6Kbao6" class="footer-cta">Únete ahora</a>
+        <div class="social-networks">
+            
+                <img src="assets/linkedin.png" alt="linkedin" onclick="window.open('https://www.linkedin.com/company/turingbox/')">
+                <img src="assets/youtube.png" alt="youtube" onclick="window.open('https://www.youtube.com/@turingbox')">
+                <img src="assets/instagram.png" alt="Instagram" onclick="window.open('https://www.instagram.com/turingbox/')">
+                <img src="assets/whatsapp.png" alt="whatsapp" onclick="window.open('https://chat.whatsapp.com/D9wyiwh2jz2FDD6NkeopCS')">
+                <img src="assets/tik-tok.png" alt="tik-tok" onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ')">
+                <img src="assets/twitter.png" alt="twitter" onclick="window.open('https://twitter.com/turingbox_')">
+                <p class="uwunt">De Colombia con ❤ para el mundo</p>
+        </div>
+    </footer>
+    
+    <script src="projects.js" type="module"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
