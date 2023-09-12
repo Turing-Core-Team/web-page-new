@@ -1,0 +1,88 @@
+---
+
+import Layout from '../layouts/Layout.astro';
+import Footer from '../components/Footer.astro';
+
+import HeroSectionBg1 from '../assets/hero section bg 1.png';
+import HeroSectionBg2 from '../assets/hero_section_bg_2.png';
+import HeroSectionBg3 from '../assets/hero section bg 3.png';
+import HeroSectionBg4 from '../assets/hero section bg 4.png';
+import PurpleHexNormImg from '../assets/purple hexagon normal.png';
+import PurpleHexImg from '../assets/purple hexagon.png';
+import DivTopDesktopImg from '../assets/div top desktop.png';
+import InvisibleSepImg from '../assets/invisible separator.png';
+import DivBotDesktopImg from '../assets/div bottom desktop.png';
+import DivTopImg from '../assets/div top.png';
+import DivBotImg from '../assets/div bottom.png';
+import ArrowImg from '../assets/arrow.png';
+
+---
+
+
+<Layout title="TuringBox - El futuro es de quien lo construye">	
+	<section id="hero-section">
+        <div class="main-content">
+            <h1 data-aos="fade-up" data-aos-duration="1000">TuringBox</h1>
+            <h2 data-aos="fade-up" data-aos-duration="1000">El futuro es de quien lo construye</h2>
+            <div class="mouse-scroll" data-aos="fade-up" data-aos-duration="1000">
+                <div class="mouse-wheel"></div>
+            </div>
+        </div>
+        <div class="bg-images" data-aos="fade-up" data-aos-duration="1000">
+            <img src={HeroSectionBg1.src} alt="bg 1" class="bg-1">
+            <img src={HeroSectionBg2.src} alt="bg 2" class="bg-2">
+            <img src={HeroSectionBg3.src} alt="bg 2" class="bg-3 hidden">
+            <img src={HeroSectionBg4.src} alt="bg 2" class="bg-4 hidden">
+        </div>
+    </section>
+    <section id="what-we-are">
+        <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">¿Quiénes somos?</h2>
+        <p class="section-content" data-aos="fade-up" data-aos-duration="1000">Somos una organización sin ánimo de lucro, creando un mejor <b class="purple">futuro</b> a partir de la <b class="purple">tecnología</b>.</p>
+    </section>
+    <figure class="first-separator" data-aos="fade-right" data-aos-duration="1000">
+        <div class="separator-line"></div>
+        <img src={PurpleHexNormImg.src} alt="Hexágono" class="first-hexagon">
+        <img src={PurpleHexImg.src} alt="Hexágono" class="first-hexagon-desktop">
+        <div class="separator-line second-line"></div>
+    </figure>
+    <section id="purpose">
+        <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">Nuestro propósito</h2>
+        <p class="section-content" data-aos="fade-up" data-aos-duration="1000">Buscamos motivar a <b class="purple">más personas</b> a incursionar en el mundo de la <b class="purple">tecnología.</b></p>
+        <p class="purple section-content separate" data-aos="fade-up" data-aos-duration="1000">Somos el lugar para <b>explorar</b> tus <b>intereses</b></p>
+        <div class="interests"></div>
+    </section>
+    <figure class="second-separator">
+        <img src={DivTopDesktopImg.src} alt="Separador 1" class="second-separator-top desktop">
+        <img src={InvisibleSepImg.src} alt="Separador 1" class="second-separator-top desktop hidden">
+        <img src={DivBotDesktopImg.src} alt="Separador 1" class="second-separator-bottom desktop">
+        <img src={DivTopImg.src} alt="Separador 1" class="second-separator-top mobile">
+        <img src={InvisibleSepImg.src} alt="Separador 1" class="second-separator-bottom mobile hidden">
+        <img src={DivBotImg.src} alt="Separador 1" class="second-separator-bottom mobile">
+    </figure>
+    <section id="how">
+        <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">¿Cómo lo hacemos?</h2>
+        <div class="complete-carousel" data-aos="fade-up" data-aos-duration="1000">
+            <div class="carousel">
+                <p class="section-content purple carousel-title">Eventos</p>
+                <p class="section-content carousel-content gray">Creamos experiencias que motiven a las personas a aprender, a través de conferencias, talleres y charlas.</p>
+            </div>
+            <div class="carousel-controls">
+                <img src={ArrowImg.src} alt="" class="left-arrow">
+                <img src="/carousel/filled purple hexagon.png" alt="Opcion 1" class="carousel-hexagon purple-pointer" data-color = "purple">
+                <img src="/carousel/empty blue hexagon.png" alt="Opcion 2" class="carousel-hexagon blue-pointer" data-color = "blue">
+                <img src="/carousel/empty pink hexagon.png" alt="Opcion 3" class="carousel-hexagon pink-pointer" data-color = "pink">
+                <img src={ArrowImg.src} alt="" class="right-arrow">
+            </div>
+        </div>
+    </section>
+    <figure class="second-separator mobile">
+        <img src={DivTopDesktopImg.src} alt="Separador 1" class="second-separator-top desktop">
+        <img src={DivBotDesktopImg.src} alt="Separador 1" class="second-separator-bottom desktop">
+        <img src={DivTopImg.src} alt="Separador 1" class="second-separator-top mobile">
+        <img src={InvisibleSepImg.src} alt="Separador 1" class="second-separator-top mobile hidden">
+        <img src={DivBotImg.src} alt="Separador 1" class="second-separator-bottom mobile">
+    </figure>
+    <script src="../jsfiles/script.js"></script>
+
+    <Footer text='¿Qué esperas para ser parte?'/>
+</Layout>

@@ -1,0 +1,42 @@
+---
+import InstagramImg from "../assets/social_media/instagram.png";
+import LinkedinImg from "../assets/social_media/linkedin.png";
+import YoutubeImg from "../assets/social_media/youtube.png";
+import WhatsappImg from "../assets/social_media/whatsapp.png";
+import TiktokImg from "../assets/social_media/tik-tok.png";
+import TwitterImg from "../assets/social_media/twitter.png";
+
+interface Props {
+	text: string;
+}
+
+const { text } = Astro.props;
+
+---
+
+<footer>
+    <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">{text}</h2>
+    <a href="https://forms.gle/aTsjyo1CLjm6Kbao6" class="footer-cta">Únete ahora</a>
+    <div class="social-networks">
+        <a href="https://www.linkedin.com/company/turingbox/" target="_blank" rel="noopener noreferrer">
+            <img src={LinkedinImg.src} alt="linkedin">
+        </a>
+        <a href="https://www.youtube.com/@turingbox" target="_blank" rel="noopener noreferrer">
+            <img src={YoutubeImg.src} alt="youtube">
+        </a>
+        <a href="https://www.instagram.com/turingbox/" target="_blank" rel="noopener noreferrer">
+            <img src={InstagramImg.src} alt="Instagram">
+        </a>
+        <a href="https://chat.whatsapp.com/D9wyiwh2jz2FDD6NkeopCS" target="_blank" rel="noopener noreferrer">
+            <img src={WhatsappImg.src} alt="whatsapp">
+        </a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">
+            <img src={TiktokImg.src} alt="tik-tok">
+        </a>
+        <a href="https://twitter.com/turingbox_" target="_blank" rel="noopener noreferrer">
+            <img src={TwitterImg.src} alt="twitter">
+        </a>
+
+        <p class="uwunt">De Colombia con ❤ para el mundo</p>
+    </div>
+</footer>
