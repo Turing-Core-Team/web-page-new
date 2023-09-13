@@ -1,0 +1,100 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Footer from '../components/Footer.astro';
+
+import HeroSectionBg1 from '../assets/hero section bg 1.png';
+import HeroSectionBg2 from '../assets/hero_section_bg_2.png';
+import HeroSectionBg3 from '../assets/hero section bg 3.png';
+import HeroSectionBg4 from '../assets/hero section bg 4.png';
+import DivTopDesktopImg from '../assets/div top desktop.png';
+import InvisibleSepImg from '../assets/invisible separator.png';
+import DivBotDesktopImg from '../assets/div bottom desktop.png';
+import DivTopImg from '../assets/div top.png';
+import DivBotImg from '../assets/div bottom.png';
+import LogoGoogleImg from '../assets/about/logo_google.png';
+import LogoStartFellowImg from '../assets/about/logo_start_fellowship.png';
+import LogoSolColImg from '../assets/about/logo_solidaridad_por_colombia.png';
+import LogoUnalImg from '../assets/about/logo_unal.png';
+import LogoTuringImg from '../assets/TB_Sim.png';
+
+---
+
+<Layout title="Nosotros - TuringBox">
+    <section id="hero-section" class="pink-gradient">
+        <div class="main-content">
+            <h2 data-aos="fade-up" data-aos-duration="1000">Queremos inspirar a más personas a crear soluciones</h2>
+            <div class="mouse-scroll" data-aos="fade-up" data-aos-duration="1000">
+                <div class="mouse-wheel"></div>
+            </div>
+        </div>
+        <div class="bg-images" data-aos="fade-up" data-aos-duration="1000">
+            <img src={HeroSectionBg1.src} alt="bg 1" class="bg-1">
+            <img src={HeroSectionBg2.src} alt="bg 2" class="bg-2">
+            <img src={HeroSectionBg3.src} alt="bg 2" class="bg-3 hidden">
+            <img src={HeroSectionBg4.src} alt="bg 2" class="bg-4 hidden">
+        </div>
+    </section>
+
+    <section id="what-we-are">
+        <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">¿Por qué existimos?</h2>
+        <p class="section-content more-space" data-aos="fade-up" data-aos-duration="1000">Turingbox nace como <b class="pink">respuesta a la falta de flexibilidad en las universidades</b> para integrar en sus currículos la <b class="pink">enseñanza de nuevas tecnologías</b></p>
+    </section>
+
+    <figure class="second-separator">
+        <img src={DivTopDesktopImg.src} alt="Separador 1" class="second-separator-top desktop">
+        <img src={InvisibleSepImg.src} alt="Separador 1" class="second-separator-bottom hidden desktop">
+        <img src={DivBotDesktopImg.src} alt="Separador 1" class="second-separator-bottom desktop">
+        <img src={DivTopImg.src} alt="Separador 1" class="second-separator-top mobile">
+        <img src={InvisibleSepImg.src} alt="Separador 1" class="second-separator-top mobile hidden">
+        <img src={DivBotImg.src} alt="Separador 1" class="second-separator-bottom mobile">
+    </figure>
+
+    <section id="history">
+        <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">Nuestra historia</h2>
+        <div class="timeline">
+            <div class="year left" data-aos="fade-up" data-aos-duration="1000">
+                <div class="separator-line-year"></div>
+                <div class="year-hexagon">
+                    <h3>2021</h3>
+                </div>
+            </div>
+            <div class="align-content">
+                <div class="year-element year-right" data-aos="fade-up" data-aos-duration="1000">
+                    <img src={LogoGoogleImg.src} alt="Logo Google">
+                    <p class="year-element-date">Junio</p>
+                    <p class="year-element-content">Nacimos como el Google Developer Student Club. Somos el club más grande y activo Colombia</p>
+                </div>
+                <div class="year-element year-left" data-aos="fade-up" data-aos-duration="1000">
+                    <img src={LogoStartFellowImg.src} alt="Logo Start Fellowship">
+                    <p class="year-element-date">Octubre</p>
+                    <p class="year-element-content">Somos impulsados a través del programa START Fellowship de la Universidad de St. Gallen en Suiza</p>
+                </div>
+                <div class="year-element year-right" data-aos="fade-up" data-aos-duration="1000">
+                    <img src={LogoSolColImg.src} alt="Logo Solidaridad">
+                    <p class="year-element-date">Diciembre</p>
+                    <p class="year-element-content">Finalistas del programa ACCIONA de la Fundación Solidaridad por Colombia y la CCB</p>
+                </div>
+            </div>
+            <div class="year right" data-aos="fade-up" data-aos-duration="1000">
+                <div class="year-hexagon">
+                    <h3>2022</h3>
+                </div>
+                <div class="separator-line-year"></div>
+            </div>
+            <div class="align-content">
+                <div class="year-element year-right" data-aos="fade-up" data-aos-duration="1000">
+                    <img src={LogoUnalImg.src} alt="Logo Unal">
+                    <p class="year-element-date">Marzo</p>
+                    <p class="year-element-content">Somos reconocidos como grupo estudiantil de la Universidad Nacional de Colombia</p>
+                </div>
+                <div class="year-element year-left" data-aos="fade-up" data-aos-duration="1000">
+                    <img src={LogoTuringImg.src} alt="Logo Turing">
+                    <p class="year-element-date">Septiembre</p>
+                    <p class="year-element-content">Nos convertimos en un semillero de co-creación interinstitucional</p>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <script src="../jsfiles/about.js"></script>
+    <Footer text='¿Qué esperas para ser parte de esta historia?'/>
+</Layout>

@@ -1,0 +1,111 @@
+--- 
+
+import Layout from '../layouts/Layout.astro';
+import Footer from '../components/Footer.astro';
+
+import HeroSectionBg1 from '../assets/hero section bg 1.png';
+import HeroSectionBg2 from '../assets/hero_section_bg_2.png';
+import HeroSectionBg3 from '../assets/hero section bg 3.png';
+import HeroSectionBg4 from '../assets/hero section bg 4.png';
+import FillBlueHexImg from '../assets/filled blue hexagon.png';
+import EmptyBlueHexImg from '../assets/empty blue hexagon.png';
+import BetterCampus from '../assets/projects/bettercampus.png';
+import SpunImg from '../assets/projects/spun.png';
+import TapliImg from '../assets/projects/tapli.png';
+import GaiaredImg from '../assets/projects/gaia_red.png';
+---
+
+
+<Layout title="Proyectos - TuringBox">	
+	<section id="hero-section" class="blue-gradient">
+        <div class="main-content">
+            <h2 data-aos="fade-up" data-aos-duration="1000">Conoce nuestros proyectos o propón el tuyo</h2>
+            <div class="mouse-scroll" data-aos="fade-up" data-aos-duration="1000">
+                <div class="mouse-wheel"></div>
+            </div>
+        </div>
+        <div class="bg-images" data-aos="fade-up" data-aos-duration="1000">
+            <img src={HeroSectionBg1.src} alt="bg 1" class="bg-1">
+            <img src={HeroSectionBg2.src} alt="bg 2" class="bg-2">
+            <img src={HeroSectionBg3.src} alt="bg 2" class="bg-3 hidden">
+            <img src={HeroSectionBg4.src} alt="bg 2" class="bg-4 hidden">
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 data-aos="fade-up" data-aos-duration="1000">Nuestros proyectos</h2>
+        <div class="project-board">
+            <figure class="project" data-aos="fade-up" data-aos-duration="1000">
+                <img src={BetterCampus.src} alt="Imagen del proyecto" class="project-img">
+                <div class="status">
+                    <img src={EmptyBlueHexImg.src} alt="finalizado" class="status-img">
+                    <p class="status-text">En Proceso</p>
+                </div>
+                <h3 class="project-title">BetterCampus</h3>
+                <p class="project-desc">Herramienta para organizar tus horarios de inscripción.</p>
+                <div class="project-bottom">
+                    <div class="members">
+                        <figure class="circle"></figure>
+                        <figure class="circle"></figure>
+                        <figure class="circle"></figure>
+                    </div>
+                    <button class="see-project" data-project="bettercampus" style="background-color: #01A744;">Ver proyecto</button>
+                </div>
+            </figure>
+            <figure class="project" data-aos="fade-up" data-aos-duration="1000">
+                <img src={SpunImg.src} alt="Imagen del proyecto" class="project-img">
+                <div class="status">
+                    <img src={EmptyBlueHexImg.src} alt="en proceso" class="status-img">
+                    <p class="status-text">En proceso</p>
+                </div>
+                <h3 class="project-title">SPUN</h3>
+                <p class="project-desc">Simulador para la prueba de la Universidad Nacional.</p>
+                <div class="project-bottom">
+                    <div class="members">
+                        <figure class="circle"></figure>
+                        <figure class="circle"></figure>
+                        <figure class="circle"></figure>
+                    </div>
+                    <button class="see-project" data-project="spun" style="background-color: #0F7490;">Ver proyecto</button>
+                </div>
+            </figure>
+            <figure class="project" data-aos="fade-up" data-aos-duration="1000">
+                <img src={TapliImg.src} alt="Imagen del proyecto" class="project-img">
+                <div class="status">
+                    <img src={EmptyBlueHexImg.src} alt="en proceso" class="status-img">
+                    <p class="status-text">En proceso</p>
+                </div>
+                <h3 class="project-title">Tapli</h3>
+                <p class="project-desc">Creación de menús digitales fácil y rápido.</p>
+                <div class="project-bottom">
+                    <div class="members">
+                        <figure class="circle"></figure>
+                        <figure class="circle"></figure>
+                        <figure class="circle"></figure>
+                    </div>
+                    <button class="see-project" data-project="tapli" style="background-color: #322724;">Ver proyecto</button>
+                </div>
+            </figure>
+            <figure class="project" data-aos="fade-up" data-aos-duration="1000">
+                <img src={GaiaredImg.src} alt="Imagen del proyecto" class="project-img">
+                <div class="status">
+                    <img src={FillBlueHexImg.src} alt="finalizado" class="status-img">
+                    <p class="status-text">Finalizado</p>
+                </div>
+                <h3 class="project-title">Gaia red</h3>
+                <p class="project-desc">Monitoreo de cultivos con IoT.</p>
+                <div class="project-bottom">
+                    <div class="members">
+                        <figure class="circle"></figure>
+                        <figure class="circle"></figure>
+                        <figure class="circle"></figure>
+                    </div>
+                    <button class="see-project" data-project="tapli" style="background-color: #176038;">Ver proyecto</button>
+                </div>
+            </figure>
+        </div>
+    </section>
+<script src="../jsfiles/projects.js"></script>
+
+    <Footer text='¿Quieres proponer un proyecto?'/>
+</Layout>
