@@ -15,4 +15,4 @@ d.addEventListener("DOMContentLoaded", e => {
     hamburgerMenu("#menu", ".header-menu", ".close-menu")
     w.addEventListener("scroll", e => scrollAnimation(".bg-2", ".bg-3", ".bg-4", "header img", "header-scroll", "header-images-scroll", "purple"))
     carousel(".carousel-hexagon", ".carousel-title", ".carousel-content", titles, contents, ".left-arrow", ".right-arrow", colors, ".first-hexagon", ".first-hexagon-desktop", colorsName, bgGradients)
-})
+}) 

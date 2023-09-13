@@ -1,0 +1,53 @@
+---
+import Image1 from "../assets/TB_Sim_blanco.png";
+import Image2 from "../assets/TB_Id_blanco.png";
+import CloseImg from "../assets/nav/close.png";
+import MenuImg from "../assets/nav/menu.png"
+import HeroBg2 from "../assets/hero_section_bg_2.png"
+---
+
+<header>
+    <a href="/" class="header-logo"> 
+        <img src={Image1.src} alt="Logo TuringBox" class="fix-icon">
+    </a>
+
+    <a href="/" class="header-logo-desktop">
+        <img src={Image2.src} alt="Logo TuringBox" class="fix-image">
+    </a>
+    
+    <img src={MenuImg.src} alt="Menu" class="header-menu">
+    <div class="header-links">
+        <a href="/projects">Proyectos</a>
+        <a href="/partnerships">Colaboraciones</a>
+        <a href="/about">Nosotros</a>
+    </div>
+    
+</header>
+<div id="menu" class="mobile none">
+    <div class="menu-header">
+        <div class="empty"></div>
+        <img src={CloseImg.src} alt="close menu" class="close-menu">
+    </div>
+    <div class="menu-options">
+        <a href="/projects" class="top-separate">Proyectos</a>
+        <div class="menu-line"></div>
+        <a href="/partnerships">Colaboraciones</a>
+        <div class="menu-line"></div>
+        <a href="/about">Nosotros</a>
+        <div class="menu-line"></div>
+        <img src={HeroBg2.src} alt="Hexagonos" class="menu-bg">
+    </div>
+</div>
+
+<style>
+    
+    .fix-image {
+        height: 4rem;
+        margin: 0 2rem 1rem ;
+    }
+
+    .fix-icon {
+        height: 3.4rem;
+    }
+    
+</style>

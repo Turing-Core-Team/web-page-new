@@ -15,42 +15,42 @@ export function carousel(controls, title, content,  titlesArr, contentsArr, left
         const color = el.getAttribute("data-color")
         el.addEventListener("click", e => {
             actualContent = index
-            $controls.forEach(element => element.setAttribute("src", `assets/empty ${element.getAttribute("data-color")} hexagon.png`));
-            el.setAttribute("src", `assets/filled ${color} hexagon.png`)
+            $controls.forEach(element => element.setAttribute("src", `/carousel/empty ${element.getAttribute("data-color")} hexagon.png`));
+            el.setAttribute("src", `/carousel/filled ${color} hexagon.png`)
             $title.textContent = titlesArr[actualContent]
             $content.textContent = contentsArr[actualContent]
             d.documentElement.style.setProperty("--tb-purple", colors[actualContent])
             d.documentElement.style.setProperty("--main-gradient", bgGradients[actualContent])
-            $hexagon.setAttribute("src", `assets/${colorsName[actualContent]} hexagon normal.png`)
-            $desktopHexagon.setAttribute("src", `assets/${colorsName[actualContent]} hexagon.png`)
+            $hexagon.setAttribute("src", `/carousel/${colorsName[actualContent]} hexagon normal.png`)
+            $desktopHexagon.setAttribute("src", `/carousel/${colorsName[actualContent]} hexagon.png`)
         })
     });
 
     $leftArrow.addEventListener("click", e => {
         if(actualContent > 0){
             actualContent--
-            $controls.forEach(element => element.setAttribute("src", `assets/empty ${element.getAttribute("data-color")} hexagon.png`));
-            $controls[actualContent].setAttribute("src", `assets/filled ${$controls[actualContent].getAttribute("data-color")} hexagon.png`)
+            $controls.forEach(element => element.setAttribute("src", `/carousel/empty ${element.getAttribute("data-color")} hexagon.png`));
+            $controls[actualContent].setAttribute("src", `/carousel/filled ${$controls[actualContent].getAttribute("data-color")} hexagon.png`)
             $title.textContent = titlesArr[actualContent]
             $content.textContent = contentsArr[actualContent]
             d.documentElement.style.setProperty("--tb-purple", colors[actualContent])
             d.documentElement.style.setProperty("--main-gradient", bgGradients[actualContent])
-            $hexagon.setAttribute("src", `assets/${colorsName[actualContent]} hexagon normal.png`)
-            $desktopHexagon.setAttribute("src", `assets/${colorsName[actualContent]} hexagon.png`)
+            $hexagon.setAttribute("src", `/carousel/${colorsName[actualContent]} hexagon normal.png`)
+            $desktopHexagon.setAttribute("src", `/carousel/${colorsName[actualContent]} hexagon.png`)
         }
     })
 
     $rightArrow.addEventListener("click", e => {
         if(actualContent < $controls.length - 1){
             actualContent++
-            $controls.forEach(element => element.setAttribute("src", `assets/empty ${element.getAttribute("data-color")} hexagon.png`));
-            $controls[actualContent].setAttribute("src", `assets/filled ${$controls[actualContent].getAttribute("data-color")} hexagon.png`)
+            $controls.forEach(element => element.setAttribute("src", `/carousel/empty ${element.getAttribute("data-color")} hexagon.png`));
+            $controls[actualContent].setAttribute("src", `/carousel/filled ${$controls[actualContent].getAttribute("data-color")} hexagon.png`)
             $title.textContent = titlesArr[actualContent]
             $content.textContent = contentsArr[actualContent]
             d.documentElement.style.setProperty("--tb-purple", colors[actualContent])
             d.documentElement.style.setProperty("--main-gradient", bgGradients[actualContent])
-            $hexagon.setAttribute("src", `assets/${colorsName[actualContent]} hexagon normal.png`)
-            $desktopHexagon.setAttribute("src", `assets/${colorsName[actualContent]} hexagon.png`)
+            $hexagon.setAttribute("src", `/carousel/${colorsName[actualContent]} hexagon normal.png`)
+            $desktopHexagon.setAttribute("src", `/carousel/${colorsName[actualContent]} hexagon.png`)
         }
     })
 }
