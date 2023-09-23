@@ -13,6 +13,10 @@ import BetterCampus from '../assets/projects/bettercampus.png';
 import SpunImg from '../assets/projects/spun.png';
 import TapliImg from '../assets/projects/tapli.png';
 import GaiaredImg from '../assets/projects/gaia_red.png';
+import LogoBetterCampus from '../assets/projects/logo_bettercampus.png';
+import LogoFreshli from '../assets/projects/logo_freshli.png';
+import LogoSpun from '../assets/projects/logo_spun.png';
+import LogoGaiared from '../assets/projects/logo_gaia_red.png';
 ---
 
 
@@ -33,13 +37,13 @@ import GaiaredImg from '../assets/projects/gaia_red.png';
     </section>
 
     <section id="projects">
-        <h2 data-aos="fade-up" data-aos-duration="1000">Nuestros proyectos</h2>
+        <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">Nuestros proyectos</h2>
         <div class="project-board">
             <figure class="project" data-aos="fade-up" data-aos-duration="1000">
                 <img src={BetterCampus.src} alt="Imagen del proyecto" class="project-img">
                 <div class="status">
-                    <img src={EmptyBlueHexImg.src} alt="finalizado" class="status-img">
-                    <p class="status-text">En Proceso</p>
+                    <img src={EmptyBlueHexImg.src} alt="en proceso" class="status-img">
+                    <p class="status-text">En proceso</p>
                 </div>
                 <h3 class="project-title">BetterCampus</h3>
                 <p class="project-desc">Herramienta para organizar tus horarios de inscripción.</p>
@@ -49,7 +53,7 @@ import GaiaredImg from '../assets/projects/gaia_red.png';
                         <figure class="circle"></figure>
                         <figure class="circle"></figure>
                     </div>
-                    <button class="see-project" data-project="bettercampus" style="background-color: #01A744;">Ver proyecto</button>
+                    <a href="#info" class="see-project" data-project="bettercampus" style="background-color: #01A744;">Ver proyecto</a>
                 </div>
             </figure>
             <figure class="project" data-aos="fade-up" data-aos-duration="1000">
@@ -66,30 +70,30 @@ import GaiaredImg from '../assets/projects/gaia_red.png';
                         <figure class="circle"></figure>
                         <figure class="circle"></figure>
                     </div>
-                    <button class="see-project" data-project="spun" style="background-color: #0F7490;">Ver proyecto</button>
+                    <a href = "#info" class="see-project" data-project="spun" style="background-color: #0F7490;">Ver proyecto</a>
                 </div>
             </figure>
             <figure class="project" data-aos="fade-up" data-aos-duration="1000">
-                <img src={TapliImg.src} alt="Imagen del proyecto" class="project-img">
+                <img src={FreshliImg.src} alt="Imagen del proyecto" class="project-img">
                 <div class="status">
                     <img src={EmptyBlueHexImg.src} alt="en proceso" class="status-img">
                     <p class="status-text">En proceso</p>
                 </div>
-                <h3 class="project-title">Tapli</h3>
-                <p class="project-desc">Creación de menús digitales fácil y rápido.</p>
+                <h3 class="project-title">Freshli</h3>
+                <p class="project-desc">Delivery de productos orgánicos comprados directamente a agricultores</p>
                 <div class="project-bottom">
                     <div class="members">
                         <figure class="circle"></figure>
                         <figure class="circle"></figure>
                         <figure class="circle"></figure>
                     </div>
-                    <button class="see-project" data-project="tapli" style="background-color: #322724;">Ver proyecto</button>
+                    <a href = "#info" class="see-project" data-project="freshli" style="background-color: #5F8D4E;">Ver proyecto</a>
                 </div>
             </figure>
             <figure class="project" data-aos="fade-up" data-aos-duration="1000">
                 <img src={GaiaredImg.src} alt="Imagen del proyecto" class="project-img">
                 <div class="status">
-                    <img src={FillBlueHexImg.src} alt="finalizado" class="status-img">
+                    <img src={EmptyBlueHexImg.src} alt="finalizado" class="status-img">
                     <p class="status-text">Finalizado</p>
                 </div>
                 <h3 class="project-title">Gaia red</h3>
@@ -100,9 +104,20 @@ import GaiaredImg from '../assets/projects/gaia_red.png';
                         <figure class="circle"></figure>
                         <figure class="circle"></figure>
                     </div>
-                    <button class="see-project" data-project="tapli" style="background-color: #176038;">Ver proyecto</button>
+                    <a href = "#info" class="see-project" data-project="gaiaRed" style="background-color: #176038;">Ver proyecto</a>
                 </div>
             </figure>
+        </div>
+    </section>
+
+    <section id="info" class="none">
+        <div class="info-image" style="background-color: #0F172A;" data-aos="fade-up" data-aos-duration="1000">
+            <img src={LogoBetterCampus.src} alt="Logo proyecto">
+        </div>
+        <h3 class="section-title info-title">Freshli</h3>
+        <p class="section-content info-text" data-aos="fade-up" data-aos-duration="1000">Diseñado con la intención de brindar a los estudiantes la capacidad de organizar sus horarios durante el proceso de inscripción en asignaturas, mediante una interfaz cómoda, intuitiva y con la facilidad de acceder de manera sencilla a información detallada sobre las asignaturas disponibles.</p>
+        <h3 class="section-title" data-aos="fade-up" data-aos-duration="1000">Integrantes</h3>
+        <div class="info-members">
         </div>
     </section>
 <script src="../jsfiles/projects.js"></script>
